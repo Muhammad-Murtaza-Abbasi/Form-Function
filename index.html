@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="insertValue()" method="post">
+            <h2>Registration</h2>
+            <div class="content">
+
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="Enter your FullName" name="name" id="name" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="name">User Name</label>
+                    <input type="text" placeholder="Enter your UserName" name="userName" id="userName" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your valid email adress" name="email" id="email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="Phone">Phone Number</label>
+                    <input type="tel" placeholder="Enter your number" name="phone" id="phone" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Enter new password" name="password" id="password" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="Confirm-Password">Confirm Password</label>
+                    <input type="password" placeholder="Confirm your password" name="confirmPassword"  id="confirmPassword" required>
+                </div>
+
+                <span class="gender-tittle">Gender</span>
+                <div class="gender-categories">
+                    <input type="radio" name="Gender" id="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="Gender" id="Female">
+                    <label for="Female">Female</label>
+
+                    <input type="radio" name="Gender" id="Other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
